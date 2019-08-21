@@ -4,7 +4,7 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Alle Schichten des Hochschulsports</h1>
 @if (User.IsInRole("Admin"))
 {
 <p>
@@ -13,7 +13,7 @@
 }
 <form asp-controller="Schichten" asp-action="Index">
     <p>
-        Inhaber: <input type="text" name="searchString">
+        Tag: <input type="text" name="searchString">
         <input type="submit" value="Filter" />
     </p>
 </form>

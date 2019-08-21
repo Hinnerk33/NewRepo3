@@ -84,7 +84,7 @@ namespace HochschulsportSchichtplan
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Schichten}/{action=Index}/{id?}");
             });
         }
     }

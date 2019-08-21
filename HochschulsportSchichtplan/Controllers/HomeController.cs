@@ -15,7 +15,7 @@ namespace HochschulsportSchichtplan.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Impressum()
         {
             return View();
         }

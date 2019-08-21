@@ -13,6 +13,6 @@ namespace HochschulsportSchichtplan.Models
         {
         }
 
-        public DbSet<HochschulsportSchichtplan.Models.Schicht> Schicht { get; set; }
+        public DbSet<Schicht> Schicht { get; set; }
     }
 }
