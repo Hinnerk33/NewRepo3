@@ -9,17 +9,21 @@
 
 
   <ItemGroup>
-    <PackageReference Include="Jquery" Version="3.4.1" />
-    <PackageReference Include="jQuery.Fullcalendar" Version="3.9.0" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
-    <PackageReference Include="moment.js" Version="2.24.0" />
   </ItemGroup>
 
 
   <ItemGroup>
     <Folder Include="Data\Migrations\" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Reference Include="DHTMLX">
+      <HintPath>..\..\..\..\Downloads\scheduler.net-eval181212\Bin\dhtmlx.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

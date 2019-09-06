@@ -3,16 +3,23 @@
     ViewData["Title"] = "Index";
 }
 
+Imports DHTMLX.Scheduler
+Imports DHTMLX.Scheduler.Data
+Imports DHTMLX.Common
 
+Namespace MyCalendar
+    Public Class CalendarController
+        Inherits System.Web.Mvc.Controller
 
+        Function Index() As ActionResult
+            Dim scheduler = New DHXScheduler()
 
+            scheduler.Config.first_hour = 8
+            scheduler.Config.last_hour = 19
 
+            Return View(scheduler)
+        End Function
 
-
-<link href="~/Content/themes/jquery.ui.all.css" rel="stylesheet" />
-<link href="~/Content/fullcalendar.css" )" rel="stylesheet" />
-
-<script src='~/Scripts/jquery-ui-1.10.4.min.js'></script>
-<script src='~/Scripts/fullcalendar.min.js'></script>
-
+    End Class
+End Namespace
 
