@@ -32,7 +32,7 @@ namespace HochschulsportSchichtplan.Controllers
 
             if (!String.IsNullOrEmpty(searchString))
             {
-                Schichten = Schichten.Where(s => s.Tag.Equals(searchString));
+                Schichten = Schichten.Where(s => s.Start.Equals(searchString));
                 
             }
 
@@ -97,7 +97,6 @@ namespace HochschulsportSchichtplan.Controllers
             }
 
             var schicht = await _context.Schicht.FindAsync(id);
-            schicht.Stunden = (schicht.Ende.Ticks - schicht.Start.Ticks)/ V;
             if (schicht == null)
             {
                 return NotFound();

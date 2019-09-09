@@ -15,6 +15,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using HochschulsportSchichtplan.Models;
 
+
 namespace HochschulsportSchichtplan
 {
     public class Startup
@@ -42,6 +43,8 @@ namespace HochschulsportSchichtplan
             services.AddDefaultIdentity<IdentityUser>()
             .AddDefaultUI(UIFramework.Bootstrap4)
             .AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
+
+            services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));
 
 
             services.AddIdentityCore<ApplicationUser>()
@@ -89,3 +92,4 @@ namespace HochschulsportSchichtplan
         }
     }
 }
+
