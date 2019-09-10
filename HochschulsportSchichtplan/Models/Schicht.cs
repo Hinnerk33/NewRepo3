@@ -9,6 +9,7 @@ namespace HochschulsportSchichtplan.Models
 {
     public class Schicht
     {
+
         public int Id { get; set; }
 
 
@@ -22,4 +23,5 @@ namespace HochschulsportSchichtplan.Models
         public Double Stunden { get; set; }
     }
 }
+
 
