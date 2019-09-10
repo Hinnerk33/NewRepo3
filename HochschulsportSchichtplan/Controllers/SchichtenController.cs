@@ -32,7 +32,7 @@ namespace HochschulsportSchichtplan.Controllers
 
             if (!String.IsNullOrEmpty(searchString))
             {
-                Schichten = Schichten.Where(s => s.Start.Equals(searchString));
+                Schichten = Schichten.Where(s => s.Inhaber.Equals(searchString));
                 
             }
 
