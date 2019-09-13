@@ -25,14 +25,15 @@ namespace HochschulsportSchichtplan.Controllers
         }
 
         // GET: Schichten
-        public async Task<IActionResult> Index(string searchString)
+        public async Task<IActionResult> Index(String searchString)
         {
             var Schichten = from m in _context.Schicht
                          select m;
 
             if (!String.IsNullOrEmpty(searchString))
             {
-                Schichten = Schichten.Where(s => s.Inhaber.Equals(searchString));
+               
+                Schichten = Schichten.Where(s => s.Start.Date.Equals(searchString));
                 
             }
 
