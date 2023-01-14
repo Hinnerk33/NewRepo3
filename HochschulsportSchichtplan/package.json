@@ -28,7 +28,7 @@
     "postcss-preset-env": "^6.4.0",
     "sass-loader": "^7.1.0",
     "webpack": "^4.26.1",
-    "webpack-cli": "^3.1.2"
+    "webpack-cli": "^3.3.12"
   },
   "browserslist": [
     ">0.25%",
